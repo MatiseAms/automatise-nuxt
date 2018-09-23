@@ -1,14 +1,6 @@
-<% if (server === 'adonis') { %>const pkg = require('../package')
-const resolve = require('path').resolve
-<% } else { %>const pkg = require('./package')
-<% } %><% if (ui === 'vuetify') { %>
-const nodeExternals = require('webpack-node-externals')
-<% } %>
+const pkg = require('./package');
 module.exports = {
   mode: '<%= mode %>',
-<% if (server === 'adonis') { %>
-  srcDir: resolve(__dirname, '..', 'resources'),
-<% } %>
   /*
   ** Headers of the page
   */
@@ -19,10 +11,7 @@ module.exports = {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: pkg.description }
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }<% if (ui === 'vuetify') { %>,
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' }<% } %>
-    ]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
 
   /*
@@ -33,71 +22,64 @@ module.exports = {
   /*
   ** Global CSS
   */
-  css: [<% if (ui === 'element-ui') { %>
-    'element-ui/lib/theme-chalk/index.css'<% } else if (ui === 'tailwind') { %>
-    '~/assets/css/tailwind.css'<% } else if (ui === 'vuetify') { %>
-    'vuetify/src/stylus/main.styl'<% } %>
+  css: [
+    {
+      src: '~assets/scss/app.scss',
+      lang: 'scss'
+    }
   ],
 
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [<% if (ui === 'element-ui') { %>
-    '@/plugins/element-ui'<% } else if (ui === 'vuetify') { %>
-    '@/plugins/vuetify'<% } %>
-  ],
+  plugins: [],
 
   /*
   ** Nuxt.js modules
   */
-  modules: [<% if (axios === 'yes') { %>
-    // Doc: https://github.com/nuxt-community/axios-module#usage
-    '@nuxtjs/axios'<% } %><% if (ui === 'bootstrap') { %>,
-    // Doc: https://bootstrap-vue.js.org/docs/
-    'bootstrap-vue/nuxt'<% } %><% if (ui === 'bulma') { %>,
-    // Doc:https://github.com/nuxt-community/modules/tree/master/packages/bulma
-    '@nuxtjs/bulma'<% } %><% if (ui === 'buefy') { %>,
-    // Doc: https://buefy.github.io/#/documentation
-    'nuxt-buefy'<% } %>
-  ],<% if (axios === 'yes') { %>
+
+  modules: ['nuxt-rfg-icon', '@nuxtjs/manifest', '@nuxtjs/pwa'],
   /*
   ** Axios module configuration
   */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
-  },<% } %>
+  },
 
   /*
   ** Build configuration
   */
-  build: {<% if (ui === 'bulma') { %>
+  build: {
+    /*
+		** Run StyleLint on save
+		*/
+    plugins: [],
+    /*
+		** PostCSS autoprefixer
+		*/
     postcss: {
-      preset: {
-        features: {
-          customProperties: false
+      plugins: {
+        'postcss-preset-env': {
+          browsers: ['last 2 versions', 'ie >= 9'],
+          features: {
+            customProperties: false
+          }
         }
       }
-    },<% } %>
+    },
     /*
     ** You can extend webpack config here
     */
     extend(config, ctx) {
-      <% if (eslint === 'yes') { %>// Run ESLint on save
+      // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({
           enforce: 'pre',
           test: /\.(js|vue)$/,
           loader: 'eslint-loader',
           exclude: /(node_modules)/
-        })
-      }<% } %><% if (ui === 'vuetify') { %>
-      if (ctx.isServer) {
-        config.externals = [
-          nodeExternals({
-            whitelist: [/^vuetify/]
-          })
-        ]
-      }<% } %>
+        });
+      }
     }
   }
-}
+};

@@ -1,0 +1,13 @@
+// Basics
+@import 'vars';
+@import 'typography/embed';
+
+// Define output settings for project
+$output: set-output(css, true);
+
+// Output the whole framework
+@import '~henris';
+
+// Theme
+@import 'typography/typography';
+@import 'components/index';
