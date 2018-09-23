@@ -2,9 +2,7 @@
 	<div class="logo">
 		<div class="logo--nuxt" />
 		<div class="logo--henris">
-			<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In  -->
-			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="256.8px" height="74px" viewBox="0 0 256.8 74" style="enable-background:new 0 0 256.8 74;" xml:space="preserve">
-
+			<svg version="1.1" x="0px" y="0px" width="256.8px" height="74px" viewBox="0 0 256.8 74" style="enable-background:new 0 0 256.8 74;" xml:space="preserve">
 				<path d="M57.6,32.4c-1.3,0.2-2.6,0.4-3.8,0.8c-0.9,0.2-1.7,0.4-2.6,0.7c-1.1-5.1-1.9-10.1-2.6-15.3c-0.5-3.5-0.8-7-1.2-10.5l0-0.1
 		c0,0,0-0.1,0-0.1c-0.2-1.8-1.7-5.4-3.8-4.1c-1.7,1.1-2.7,3-2.6,5c1.2,8.9,2.8,17.7,5.1,26.4c-1,0.3-2,0.6-3.1,0.9
 		c-4.4,1.4-8.8,2.8-13.2,4.4c-0.1-1.3-0.3-2.6-0.4-4c-1-10.6-1.5-21.3-1.9-31.9l0,0c-0.1-1.8-1-5.5-3.3-4.4C22.7,1,21.2,1.5,21.2,5

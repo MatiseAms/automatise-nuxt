@@ -13,16 +13,7 @@ module.exports = {
   // add your custom rules here
   rules: {
     'vue/html-indent': ['error', 'tab'],
-    'vue/max-attributes-per-line': [
-      'warn',
-      {
-        singleline: 3,
-        multiline: {
-          max: 3,
-          allowFirstLine: false
-        }
-      }
-    ],
+    'vue/max-attributes-per-line': [0],
     'vue/html-self-closing': [
       'warn',
       {
