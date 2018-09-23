@@ -4,8 +4,8 @@ h3,
 h4,
 h5,
 h6 {
-  color: color(Blue);
+  color: inherit;
   &.sub {
-    color: color(Orange);
+    font-weight: 400;
   }
 }

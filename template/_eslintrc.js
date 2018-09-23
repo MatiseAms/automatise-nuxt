@@ -14,11 +14,11 @@ module.exports = {
   rules: {
     'vue/html-indent': ['error', 'tab'],
     'vue/max-attributes-per-line': [
-      2,
+      'warn',
       {
         singleline: 3,
         multiline: {
-          max: 1,
+          max: 3,
           allowFirstLine: false
         }
       }

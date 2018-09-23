@@ -1,6 +1,8 @@
 <template>
 	<footer id="footer" class="footer">
-		<h3>Footer</h3>
+		<h5 class="sub">by
+			<a href="https://www.matise.nl">Matise</a>
+		</h5>
 	</footer>
 </template>
 
@@ -12,7 +14,9 @@ export default {};
 @import './assets/scss/vars';
 @import '~henris';
 
+// Footer styles
 .footer {
-	// Footer styles
+	padding: 2rem;
+	text-align: center;
 }
 </style>

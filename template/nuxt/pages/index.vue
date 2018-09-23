@@ -2,14 +2,19 @@
 
 	<main class="page page--home">
 		<section class="intro">
-			<h1>Welcome home</h1>
+			<henris-nuxt />
 		</section>
 	</main>
 
 </template>
 
 <script>
-export default {};
+import henrisNuxt from '~/components/henris-nuxt.vue';
+export default {
+	components: {
+		henrisNuxt
+	}
+};
 </script>
 
 <style lang="scss">
