@@ -1,6 +1,6 @@
 {
   "name": "create-henris-nuxt",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Create Henris Nuxt.js App.",
   "bin": "cli.js",
   "files": [
