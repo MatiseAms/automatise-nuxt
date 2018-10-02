@@ -61,8 +61,8 @@ module.exports = {
       message: 'Choose rendering mode',
       type: 'list',
       choices: [
-        { name: 'Universal', value: 'universal' },
-        { name: 'Single Page App', value: 'spa' }
+        { name: 'Universal (Client + SSR)', value: 'universal' },
+        { name: 'Single Page App (Client Only)', value: 'spa' }
       ],
       default: 'universal'
     },

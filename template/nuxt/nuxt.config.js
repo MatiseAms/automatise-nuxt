@@ -17,17 +17,7 @@ module.exports = {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#FFFFFF' },
-
-  /*
-  ** Global CSS
-  */
-  css: [
-    {
-      src: '~assets/scss/app.scss',
-      lang: 'scss'
-    }
-  ],
+  loading: { color: '#000000' },
 
   /*
   ** Plugins to load before mounting the App
@@ -80,6 +70,18 @@ module.exports = {
           exclude: /(node_modules)/
         });
       }
+    },
+    styleResources: {
+      scss: './assets/scss/vars.scss'
     }
-  }
+  },
+  /*
+  ** Global CSS
+  */
+  css: [
+    {
+      src: '~assets/scss/app.scss',
+      lang: 'scss'
+    }
+  ]
 };

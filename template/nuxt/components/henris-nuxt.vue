@@ -64,9 +64,6 @@
 </template>
 
 <style lang="scss">
-@import './assets/scss/vars';
-@import '~henris';
-
 .logo {
 	width: 50vw;
 	display: block;

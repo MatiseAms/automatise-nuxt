@@ -1,5 +1,5 @@
 // Basics
-@import 'vars';
+@import 'settings/pre';
 @import 'typography/embed';
 
 // Define output settings for project
@@ -7,6 +7,9 @@ $output: set-output(css, true);
 
 // Output the whole framework
 @import '~henris';
+
+// Defined settings
+@import 'settings/post';
 
 // Theme
 @import 'typography/typography';

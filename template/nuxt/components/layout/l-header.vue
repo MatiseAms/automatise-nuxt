@@ -9,9 +9,6 @@ export default {};
 </script>
 
 <style lang="scss">
-@import './assets/scss/vars';
-@import '~henris';
-
 .header {
 	// Header styles
 }

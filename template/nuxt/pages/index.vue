@@ -18,9 +18,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import './assets/scss/vars';
-@import '~henris';
-
 .page {
 	// general page styles
 	&--home {
