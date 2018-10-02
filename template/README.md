@@ -4,7 +4,7 @@
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 $ <%= _.pm %> install
 
@@ -20,3 +20,5 @@ $ <%= _.pm %> run generate
 ```
 
 For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+
+For detailed explanation on henris, checkout [Henris docs](https://henris.style).
