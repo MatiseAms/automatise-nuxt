@@ -1,7 +1,7 @@
 <template>
 	<div class="layout layout-default">
 		<l-header />
-		<nuxt/>
+		<nuxt />
 		<l-footer />
 	</div>
 </template>
@@ -17,8 +17,3 @@ export default {
 	}
 };
 </script>
-
-<style lang="scss">
-@import './assets/scss/vars';
-@import '~henris';
-</style>

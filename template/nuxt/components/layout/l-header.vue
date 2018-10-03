@@ -9,6 +9,8 @@ export default {};
 </script>
 
 <style lang="scss">
+@import '~tools';
+
 .header {
 	// Header styles
 }

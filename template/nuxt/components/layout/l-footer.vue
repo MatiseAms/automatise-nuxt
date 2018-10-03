@@ -11,6 +11,7 @@ export default {};
 </script>
 
 <style lang="scss">
+@import '~tools';
 // Footer styles
 .footer {
 	padding: 2rem;

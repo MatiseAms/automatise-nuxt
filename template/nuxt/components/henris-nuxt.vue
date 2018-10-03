@@ -64,6 +64,8 @@
 </template>
 
 <style lang="scss">
+@import '~tools';
+
 .logo {
 	width: 50vw;
 	display: block;

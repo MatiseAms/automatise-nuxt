@@ -18,6 +18,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import '~tools';
+
 .page {
 	// general page styles
 	&--home {
