@@ -1,4 +1,4 @@
-# Create Henris Nuxt App
+# Create Matise Nuxt App
 
 [![NPM version](https://img.shields.io/npm/v/create-matise-nuxt.svg?style=flat)](https://npmjs.com/package/create-matise-nuxt) [![NPM downloads](https://img.shields.io/npm/dm/create-matise-nuxt.svg?style=flat)](https://npmjs.com/package/create-matise-nuxt)
 
