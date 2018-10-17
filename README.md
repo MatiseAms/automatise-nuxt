@@ -14,12 +14,6 @@ Make sure you have [npx](https://www.npmjs.com/package/npx) installed (`npx` is 
 npx create-henris-nuxt <my-project>
 ```
 
-Or with [yarn](https://yarnpkg.com/en/):
-
-```bash
-yarn create henris-nuxt <my-project>
-```
-
 ## Credits
 
 - [egoist](https://github.com/egoist)

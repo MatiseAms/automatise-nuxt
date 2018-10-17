@@ -11,9 +11,9 @@ console.log(`> Generating Matise Nuxt.js project in ${targetPath}`);
 
 // See https://sao.js.org/#/advanced/standalone-cli
 sao({
-  template: __dirname,
-  targetPath
+	template: __dirname,
+	targetPath
 }).catch((err) => {
-  console.error(err.name === 'SAOError' ? err.message : err.stack);
-  process.exit(1);
+	console.error(err.name === 'SAOError' ? err.message : err.stack);
+	process.exit(1);
 });
