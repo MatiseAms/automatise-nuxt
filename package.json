@@ -1,7 +1,7 @@
 {
-  "name": "create-henris-nuxt",
-  "version": "0.0.7",
-  "description": "Create Henris Nuxt.js App.",
+  "name": "create-matise-nuxt",
+  "version": "0.0.1",
+  "description": "Create Matise Nuxt.js App.",
   "bin": "cli.js",
   "files": [
     "cli.js",
@@ -9,14 +9,13 @@
     "template/"
   ],
   "repository": {
-    "url": "git+https://github.com/matiseams/create-henris-nuxt.git",
+    "url": "git+https://github.com/matiseams/create-matise-nuxt.git",
     "type": "git"
   },
   "scripts": {
     "test": "ava --verbose"
   },
   "dependencies": {
-    "lodash": "^4.17.11",
     "minimist": "^1.2.0",
     "sao": "^0.22.17",
     "superb": "^2.0.0"
@@ -25,10 +24,8 @@
     "ava": "^0.25.0"
   },
   "authors": [
-    "Egoist <0x142857@gmail.com>",
-    "Nuxt team <team@nuxtjs.org>",
-    "Clark Du <clark.duxin@gmail.com>",
-    "Sil van Diepen <sil@matise.nl>"
+    "Sil van Diepen <sil@matise.nl>",
+    "Stephan Hoogland <stephan@matise.nl>"
   ],
   "license": "MIT"
 }
