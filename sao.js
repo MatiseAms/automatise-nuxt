@@ -21,7 +21,7 @@ module.exports = {
 		},
 		description: {
 			message: 'Project description',
-			default: `My ${superb()} Matise Nuxt.js project`
+			default: `My ${superb.random()} Matise Nuxt.js project`
 		},
 		author: {
 			message: 'Author name',
