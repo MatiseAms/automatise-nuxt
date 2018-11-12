@@ -1,8 +1,6 @@
 <template>
 	<footer id="footer" class="footer">
-		<h5 class="sub">by
-			<a href="https://www.matise.nl">Matise</a>
-		</h5>
+		<h5 class="sub">footer</h5>
 	</footer>
 </template>
 

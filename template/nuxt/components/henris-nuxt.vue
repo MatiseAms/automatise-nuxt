@@ -73,8 +73,7 @@
 	position: relative;
 	overflow: hidden;
 	border-radius: 3px;
-	box-shadow: grid(0.25 0.25 3 0) color(Henris, 0.25),
-		0 -3px 0 0 color(Henris, 0.15) inset;
+	box-shadow: grid(0.25 0.25 3 0) color(Henris, 0.25), 0 -3px 0 0 color(Henris, 0.15) inset;
 	&--nuxt {
 		width: 100%;
 		height: 100%;

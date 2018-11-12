@@ -1,36 +1,37 @@
 {
-  "name": "<%= name %>",
-  "version": "1.0.0",
-  "description": "<%= description %>",
-  "author": "<%= author %>",
-  "private": true,
-  "scripts": {
-    "dev": "sh scripts/dev.sh",
-    "devlocalapi": "sh scripts/devlocal.sh",
-    "staging": "sh scripts/staging.sh",
-    "production": "sh scripts/production.sh",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "precommit": "lint"
-  },
-  "dependencies": {
-    "nuxt": "^2.0.0",
-    "@nuxtjs/axios": "^5.0.0"
-  },
-  "devDependencies": {
-    "henris": "^0.4.2",
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.0.1",
-    "eslint-loader": "^2.0.0",
-    "eslint-plugin-vue": "^4.0.0",
-    "node-sass": "^4.9.3",
-    "autoprefixer": "^9.1.5",
-    "postcss": "^7.0.2",
-    "nuxt-rfg-icon": "^0.5.0",
-    "@nuxtjs/manifest": "^2.4.0",
-    "@nuxtjs/pwa": "^2.5.0",
-    "@nuxtjs/google-analytics": "^2.0.2",
-    "sass-loader": "^7.1.0",
-    "stylelint": "^9.5.0",
-    "stylelint-config-recommended": "^2.1.0"
-  }
+	"name": "<%= name %>",
+	"version": "1.0.0",
+	"description": "<%= description %>",
+	"author": "<%= author %>",
+	"private": true,
+	"scripts": {
+		"dev": "sh scripts/dev.sh",
+		"devlocalapi": "sh scripts/devlocal.sh",
+		"staging": "sh scripts/staging.sh",
+		"production": "sh scripts/production.sh",
+		"lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+		"precommit": "lint"
+	},
+	"dependencies": {
+		"nuxt": "^2.0.0",
+		"@nuxtjs/axios": "^5.0.0"
+	},
+	"devDependencies": {
+		"henris": "^0.4.2",
+		"babel-eslint": "^10.0.1",
+		"eslint": "^5.0.1",
+		"eslint-loader": "^2.0.0",
+		"eslint-plugin-vue": "^4.0.0",
+		"node-sass": "^4.9.3",
+		"autoprefixer": "^9.1.5",
+		"postcss": "^7.0.2",
+		"nuxt-rfg-icon": "^0.5.0",
+		"@nuxtjs/manifest": "^2.4.0",
+		"@nuxtjs/pwa": "^2.5.0",
+		"@nuxtjs/google-analytics": "^2.0.2",
+		"sass-loader": "^7.1.0",
+		"stylelint": "^9.5.0",
+		"stylelint-config-recommended": "^2.1.0",
+		"eslint-plugin-prettier": "^3.0.0"
+	}
 }
