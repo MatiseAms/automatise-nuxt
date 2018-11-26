@@ -1,5 +1,5 @@
-import pkg from './package'
-import config from './config/latest'
+import pkg from './package';
+import config from './config/latest';
 
 module.exports = {
 	mode: 'universal',
@@ -8,8 +8,8 @@ module.exports = {
 	},
 
 	/*
-	** Headers of the page
-	*/
+	 ** Headers of the page
+	 */
 	head: {
 		title: pkg.name,
 		meta: [
@@ -17,27 +17,25 @@ module.exports = {
 			{ name: 'viewport', content: 'width=device-width, initial-scale=1' },
 			{ hid: 'description', name: 'description', content: pkg.description }
 		],
-		link: [
-			{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-		]
+		link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
 	},
 
 	/*
 	 ** Customize the progress bar color
 	 */
 	loading: {
-		color: '#000000'//,
+		color: '#000000' //,
 		// failedColor: '#000000'
 	},
 
 	/*
-	** Plugins to load before mounting the App
-	*/
+	 ** Plugins to load before mounting the App
+	 */
 	plugins: [],
 
 	/*
-	** Nuxt.js modules
-	*/
+	 ** Nuxt.js modules
+	 */
 	modules: [
 		'nuxt-rfg-icon',
 		'@nuxtjs/manifest',
@@ -47,16 +45,16 @@ module.exports = {
 	],
 
 	/*
-	** GoogleAnalytics module configuration
-	*/
+	 ** GoogleAnalytics module configuration
+	 */
 	// 'google-analytics': {
 	// 	id: 'UA-xxxxxxxx-xx',
 	// 	disabled: false
 	// },
 
 	/*
-	** Axios module configuration
-	*/
+	 ** Axios module configuration
+	 */
 	axios: {
 		retry: {
 			retries: 3
@@ -65,29 +63,23 @@ module.exports = {
 	},
 
 	/*
-	** Build configuration
-	*/
+	 ** Build configuration
+	 */
 	build: {
 		/*
-		** Run StyleLint on save
-		*/
+		 ** Build plugins
+		 */
 		plugins: [],
-		/*
-		** PostCSS autoprefixer
-		*/
-		postcss: {
-			plugins: {
-				'postcss-preset-env': {
-					browsers: ['last 2 versions', 'ie >= 9'],
-					features: {
-						customProperties: false
-					}
-				}
-			}
+
+		babel: {
+			babelrc: true,
+			cacheDirectory: undefined
 		},
+		transpile: [], // Name of NPM packages to be transpiled
+
 		/*
-		** You can extend webpack config here
-		*/
+		 ** You can extend webpack config here
+		 */
 		extend(config, ctx) {
 			// Define toolset shortcut
 			config.resolve.alias['~tools'] = 'assets/scss/tools.scss';
@@ -104,8 +96,8 @@ module.exports = {
 	},
 
 	/*
-	** Global CSS
-	*/
+	 ** Global CSS
+	 */
 	css: [
 		{
 			src: '~assets/scss/app.scss',

@@ -34,7 +34,8 @@ module.exports = {
 		const moveable = {
 			'gitignore': '.gitignore',
 			'_eslintrc.js': '.eslintrc.js',
-			'_package.json': 'package.json'
+			'_package.json': 'package.json',
+			'_babelrc': '.babelrc'
 		};
 		let nuxtDir;
 		return Object.assign(moveable, move('nuxt', nuxtDir));
