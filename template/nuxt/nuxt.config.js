@@ -1,6 +1,10 @@
 import pkg from './package';
 import config from './config/latest';
 
+if (config.env === 'development') {
+	process.env.DEBUG = 'nuxt:*';
+}
+
 module.exports = {
 	mode: 'universal',
 	env: {
