@@ -6,7 +6,7 @@ module.exports = {
 	},
 	parserOptions: {
 		parser: 'babel-eslint',
-		soureceType: 'module'
+		sourceType: 'module'
 	},
 	extends: [
 		// https://github.com/vuejs/eslint-plugin-vue#priority-a-essential-error-prevention
@@ -20,7 +20,7 @@ module.exports = {
 		'prettier/prettier': [
 			'warn',
 			{
-				printWidth: 100,
+				printWidth: 120,
 				semi: true,
 				useTabs: true,
 				tabWidth: 1,
@@ -66,7 +66,7 @@ module.exports = {
 		//essential
 		'vue/no-async-in-computed-properties': 'warn',
 		'vue/no-dupe-keys': 'error',
-		'vue/no-duplicate-attributes': 'off',
+		'vue/no-duplicate-attributes': 'warn',
 		'vue/no-parsing-error': 'warn',
 		'vue/no-reserved-keys': 'error',
 		'vue/no-shared-component-data': 'error',
@@ -114,11 +114,11 @@ module.exports = {
 			}
 		],
 		'vue/html-self-closing': [
-			'error',
+			'warn',
 			{
 				html: {
-					void: 'always',
-					normal: 'always',
+					void: 'never',
+					normal: 'never',
 					component: 'always'
 				},
 				svg: 'any',
@@ -143,7 +143,6 @@ module.exports = {
 				}
 			}
 		],
-		'vue/mustache-interpolation-spacing': 'error',
 		'vue/mustache-interpolation-spacing': ['warn', 'always'],
 		'vue/no-multi-spaces': 'warn',
 		'vue/require-default-prop': 'error',
