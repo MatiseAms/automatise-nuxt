@@ -42,8 +42,6 @@ module.exports = {
 	 */
 	modules: [
 		'nuxt-rfg-icon',
-		'@nuxtjs/manifest',
-		'@nuxtjs/pwa',
 		// '@nuxtjs/google-analytics',
 		'@nuxtjs/axios'
 	],

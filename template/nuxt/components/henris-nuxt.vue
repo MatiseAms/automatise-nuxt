@@ -1,6 +1,6 @@
 <template>
 	<div class="logo">
-		<div class="logo--nuxt" />
+		<div class="logo--nuxt"></div>
 		<div class="logo--henris">
 			<svg
 				version="1.1"
