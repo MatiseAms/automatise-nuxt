@@ -13,7 +13,7 @@
 		"type": "git"
 	},
 	"scripts": {
-		"test": "rm -rf fissa && node cli.js fissa"
+		"try": "rm -rf fissa && node cli.js fissa"
 	},
 	"dependencies": {
 		"minimist": "^1.2.0",
