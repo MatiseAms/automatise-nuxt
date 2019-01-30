@@ -73,10 +73,11 @@ module.exports = {
 		 */
 		plugins: [],
 
-		babel: {
-			babelrc: true,
-			cacheDirectory: undefined
-		},
+		// babel: {
+		// 	babelrc: true,
+		// 	cacheDirectory: undefined
+		// },
+
 		transpile: [], // Name of NPM packages to be transpiled
 
 		/*

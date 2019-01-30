@@ -19,7 +19,7 @@
 	"devDependencies": {
 		"@nuxtjs/google-analytics": "^2.0.2",
 		"nuxt-rfg-icon": "^0.5.0",
-		"henris": "^0.4.2",
+		"henris": "^0.6.0",
 		"babel-eslint": "^10.0.1",
 		"eslint": "^5.9.0",
 		"eslint-loader": "^2.0.0",
