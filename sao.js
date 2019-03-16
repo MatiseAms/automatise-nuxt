@@ -21,7 +21,7 @@ module.exports = {
 		},
 		description: {
 			message: 'Project description',
-			default: `My ${superb()} Matise Nuxt.js project`
+			default: `My ${superb.random()} Matise Nuxt.js project`
 		},
 		author: {
 			message: 'Author name',
@@ -34,7 +34,8 @@ module.exports = {
 		const moveable = {
 			'gitignore': '.gitignore',
 			'_eslintrc.js': '.eslintrc.js',
-			'_package.json': 'package.json'
+			'_package.json': 'package.json',
+			'_babelrc': '.babelrc'
 		};
 		let nuxtDir;
 		return Object.assign(moveable, move('nuxt', nuxtDir));

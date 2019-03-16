@@ -1,19 +1,19 @@
 <template>
 	<div class="layout layout-default">
-		<l-header />
+		<layout-header />
 		<nuxt />
-		<l-footer />
+		<layout-footer />
 	</div>
 </template>
 
 <script>
-import lHeader from '~/components/layout/l-header.vue';
-import lFooter from '~/components/layout/l-footer.vue';
+import LayoutHeader from '~/components/layout/header.vue';
+import LayoutFooter from '~/components/layout/footer.vue';
 
 export default {
 	components: {
-		lHeader,
-		lFooter
+		LayoutHeader,
+		LayoutFooter
 	}
 };
 </script>
