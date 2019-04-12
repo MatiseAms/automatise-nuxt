@@ -113,18 +113,7 @@ module.exports = {
 				ignores: []
 			}
 		],
-		'vue/html-self-closing': [
-			'warn',
-			{
-				html: {
-					void: 'never',
-					normal: 'never',
-					component: 'always'
-				},
-				svg: 'any',
-				math: 'always'
-			}
-		],
+		'vue/html-self-closing': 0,
 		'vue/html-closing-bracket-spacing': [
 			'warn',
 			{
