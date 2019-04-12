@@ -11,9 +11,9 @@
 		"production": "sh scripts/production.sh",
 		"lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
 		"precommit": "lint",
+		"generate": "nuxt generate",
 		"stylelint": "stylelint '**/*.vue' '**/*.scss'",
-		"stylelint:fix": "stylelint '**/*.vue' '**/*.scss' --fix",
-		"generate": "nuxt generate"
+		"stylelint:fix": "stylelint '**/*.vue' '**/*.scss' --fix"
 	},
 	"dependencies": {
 		"nuxt": "^2.3.2",
@@ -29,10 +29,10 @@
 		"eslint-plugin-vue": "^4.0.0",
 		"eslint-plugin-prettier": "^3.0.0",
 		"node-sass": "^4.9.3",
-    "sass-loader": "^7.1.0",		
-    "stylelint": "^9.5.0",
-		"stylelint-logical-order": "0.0.4",
-		"stylelint-order": "^2.0.0"
+    "sass-loader": "^7.1.0",	
+		"stylelint": "^9.10.1",
+		"stylelint-logical-order": "^0.0.5",
+		"stylelint-order": "^2.2.0"
 	},
 	"browserslist": ["last 2 versions", "not dead"]
 }

@@ -154,6 +154,7 @@ module.exports = {
 		'vue/html-quotes': 'warn',
 		'vue/order-in-components': 'warn',
 		'vue/this-in-template': 'error',
-		'vue/attributes-order': 'warn'
+		'vue/attributes-order': 'warn',		
+		'vue/max-attributes-per-line': 0
 	}
 };
