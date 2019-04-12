@@ -33,13 +33,12 @@
 @import '~tools';
 
 .logo {
-	width: 50vw;
-	display: block;
-	height: 40vw;
 	position: relative;
+	display: block;
+	width: 50vw;
+	height: 40vw;
 	overflow: hidden;
 	border-radius: 3px;
-	// box-shadow: 0 -3px 0 0 color(Henris, 0.15) inset;
 	animation: comeUp 0.75s ease-in-out forwards;
 	background-color: color(Henris);
 	@keyframes comeUp {
