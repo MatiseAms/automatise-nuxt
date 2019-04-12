@@ -10,23 +10,26 @@
 		"staging": "sh scripts/staging.sh",
 		"production": "sh scripts/production.sh",
 		"lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+		"lintfix": "eslint --ext .js,.vue --ignore-path .gitignore . --fix",
 		"precommit": "lint",
 		"generate": "nuxt generate",
 		"stylelint": "stylelint '**/*.vue' '**/*.scss'",
 		"stylelint:fix": "stylelint '**/*.vue' '**/*.scss' --fix"
 	},
 	"dependencies": {
-		"nuxt": "^2.3.2",
-		"@nuxtjs/axios": "^5.3.6"
+		"nuxt": "^2.6.1",
+		"@nuxtjs/axios": "^5.4.1",
+		"@nuxtjs/google-analytics": "^2.2.0"
 	},
 	"devDependencies": {
-		"@nuxtjs/google-analytics": "^2.0.2",
-		"nuxt-rfg-icon": "^0.5.0",
-		"henris": "^0.6.1",
+		"nuxt-rfg-icon": "^0.6.3",
+		"henris": "^0.6.9",
 		"babel-eslint": "^10.0.1",
-		"eslint": "^5.9.0",
-		"eslint-loader": "^2.0.0",
-		"eslint-plugin-vue": "^4.0.0",
+		"eslint": "^5.16.0",
+		"eslint-config-prettier": "^4.1.0",
+		"eslint-friendly-formatter": "^4.0.1",
+		"eslint-loader": "^2.1.1",
+		"eslint-plugin-vue": "^5.2.2",
 		"eslint-plugin-prettier": "^3.0.0",
 		"node-sass": "^4.9.3",
     "sass-loader": "^7.1.0",	
@@ -34,5 +37,8 @@
 		"stylelint-logical-order": "^0.0.5",
 		"stylelint-order": "^2.2.0"
 	},
-	"browserslist": ["last 2 versions", "not dead"]
+	"browserslist": [
+		"last 2 versions",
+		"not dead"
+	]
 }

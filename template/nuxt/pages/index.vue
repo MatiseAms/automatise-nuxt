@@ -1,11 +1,9 @@
 <template>
-
 	<main class="page page--home">
 		<section class="intro">
 			<henris-nuxt />
 		</section>
 	</main>
-
 </template>
 
 <script>
