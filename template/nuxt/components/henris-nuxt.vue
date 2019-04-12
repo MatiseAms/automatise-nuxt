@@ -39,7 +39,19 @@
 	position: relative;
 	overflow: hidden;
 	border-radius: 3px;
-	box-shadow: grid(0.25 0.25 3 0) color(Henris, 0.25), 0 -3px 0 0 color(Henris, 0.15) inset;
+	// box-shadow: 0 -3px 0 0 color(Henris, 0.15) inset;
+	animation: comeUp 0.75s ease-in-out forwards;
+	background-color: color(Henris);
+	@keyframes comeUp {
+		0% {
+			box-shadow: 0 0 grid(0) 0 color(Black, 0.25), 0 -3px 0 0 color(Black, 0.15) inset;
+			transform: translateY(100%);
+		}
+		100% {
+			box-shadow: 0 0 grid(3) 0 color(Black, 0.25), 0 -3px 0 0 color(Black, 0.15) inset;
+			transform: translateY(0%);
+		}
+	}
 	&--nuxt {
 		width: 100%;
 		height: 100%;
@@ -55,12 +67,28 @@
 			top: 100%;
 		}
 		&:before {
-			background-color: color(Blue, 0.5);
-			transform: scale(0.75, 1) translateX(-85%) translateY(-50%) rotate(45deg);
+			box-shadow: 0 0 0 1rem color(Blue, 0.5) inset;
+			animation: fromLeft 1s ease-in-out forwards;
 		}
 		&:after {
-			background-color: color(Green, 0.5);
-			transform: scale(0.75, 1) translateX(-35%) translateY(-40%) rotate(45deg);
+			box-shadow: 0 0 0 1rem color(Green, 0.5) inset;
+			animation: fromRight 1s ease-in-out forwards;
+		}
+		@keyframes fromLeft {
+			0% {
+				transform: scale(0.5, 0.5) translateX(-185%) translateY(0%) rotate(45deg);
+			}
+			100% {
+				transform: scale(0.75, 1) translateX(-85%) translateY(-50%) rotate(45deg);
+			}
+		}
+		@keyframes fromRight {
+			0% {
+				transform: scale(0.5, 0.5) translateX(15%) translateY(0%) rotate(45deg);
+			}
+			100% {
+				transform: scale(0.75, 1) translateX(-35%) translateY(-40%) rotate(45deg);
+			}
 		}
 	}
 	&--henris {
@@ -77,7 +105,7 @@
 			margin-right: 2rem;
 		}
 		path {
-			fill: color(Henris);
+			fill: color(Black);
 		}
 	}
 }

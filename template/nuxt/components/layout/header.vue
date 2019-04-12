@@ -1,15 +1,15 @@
 <template>
 	<header id="header" class="header">
-		<h3>{{ package.name }}</h3>
+		<h3>{{ projectName }}</h3>
 	</header>
 </template>
 
 <script>
-import pkg from '~package.json';
+import project from '~/package.json';
 export default {
 	data() {
 		return {
-			package: pkg
+			projectName: project.name
 		};
 	}
 };
