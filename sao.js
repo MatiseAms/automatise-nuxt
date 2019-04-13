@@ -28,6 +28,13 @@ module.exports = {
 			type: 'string',
 			default: ':gitUser:',
 			store: true
+		},
+		henris: {
+			message: "Henri's",
+			type: 'list',
+			choices: ['stable', 'beta'],
+			default: 'stable',
+			store: true
 		}
 	},
 	move(answers) {
@@ -36,8 +43,10 @@ module.exports = {
 			'_eslintrc.js': '.eslintrc.js',
 			'_package.json': 'package.json',
 			'_babelrc': '.babelrc',
-			'_stylelint': 'stylelint.json',
+			'_stylelint.json': 'stylelint.json',
 			'_prettierrc': '.prettierrc',
+			'assets/scss/_app.scss': 'assets/scss/app.scss',
+			'assets/scss/_tools.scss': 'assets/scss/tools.scss',
 		};
 		let nuxtDir;
 		return Object.assign(moveable, move('nuxt', nuxtDir));

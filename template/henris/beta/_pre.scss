@@ -1,0 +1,14 @@
+// Load custom-output & setting tools
+@import '~@henris/default';
+@import '~@henris/utils';
+@import '~@henris/custom';
+
+// Add custom project colors
+@import '~assets/scss/color/color';
+
+// Define settings particular to project
+// $setting: set-setting('grid-min', 16); // default null
+// $setting: set-setting('grid-max', 80); // default null
+
+// Define font variables
+// $primary-font-family: 'Arial', serif;
