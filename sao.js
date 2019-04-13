@@ -44,10 +44,17 @@ module.exports = {
 			'_package.json': 'package.json',
 			'_babelrc': '.babelrc',
 			'_stylelint.json': 'stylelint.json',
-			'_prettierrc': '.prettierrc',
-			'assets/scss/_app.scss': 'assets/scss/app.scss',
-			'assets/scss/_tools.scss': 'assets/scss/tools.scss',
+			'_prettierrc': '.prettierrc'
 		};
+		if (answers.henris === 'beta') {
+			moveable['henris/beta/_app.scss'] = 'assets/scss/app.scss'
+			moveable['henris/beta/_tools.scss'] = 'assets/scss/tools.scss'
+			moveable['henris/beta/_pre.scss'] = 'assets/scss/tools/_pre.scss'
+		} else {
+			moveable['henris/stable/_app.scss'] = 'assets/scss/app.scss'
+			moveable['henris/stable/_tools.scss'] = 'assets/scss/tools.scss'
+			moveable['henris/stable/_pre.scss'] = 'assets/scss/tools/_pre.scss'
+		}
 		let nuxtDir;
 		return Object.assign(moveable, move('nuxt', nuxtDir));
 	},

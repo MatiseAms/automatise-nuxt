@@ -22,9 +22,10 @@
 		"@nuxtjs/google-analytics": "^2.2.0"
 	},
 	"devDependencies": {
-		"nuxt-rfg-icon": "^0.6.3",
-		<% if (author) { %>"henris": "^0.6.9",<% } else { %>"@henris/next": "^1.0.10",
-		"@henris/custom": "^0.0.2",<% } %>
+		"nuxt-rfg-icon": "^0.6.3",<% if (henris === 'beta') { %>
+		"@henris/next": "^1.0.10",
+		"@henris/custom": "^0.0.2",<% } else { %>
+		"henris": "^0.6.9",<% } %>
 		"babel-eslint": "^10.0.1",
 		"eslint": "^5.16.0",
 		"eslint-config-prettier": "^4.1.0",
