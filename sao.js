@@ -28,6 +28,13 @@ module.exports = {
 			type: 'string',
 			default: ':gitUser:',
 			store: true
+		},
+		henris: {
+			message: "Henri's",
+			type: 'list',
+			choices: ['stable', 'beta'],
+			default: 'stable',
+			store: true
 		}
 	},
 	move(answers) {
@@ -35,14 +42,48 @@ module.exports = {
 			'gitignore': '.gitignore',
 			'_eslintrc.js': '.eslintrc.js',
 			'_package.json': 'package.json',
-			'_babelrc': '.babelrc'
+			'_babelrc': '.babelrc',
+			'_stylelint.json': 'stylelint.json',
+			'_prettierrc': '.prettierrc'
 		};
+		if (answers.henris === 'beta') {
+			moveable['henris/beta/_app.scss'] = 'assets/scss/app.scss'
+			moveable['henris/beta/_tools.scss'] = 'assets/scss/tools.scss'
+			moveable['henris/beta/_pre.scss'] = 'assets/scss/tools/_pre.scss'
+		} else {
+			moveable['henris/stable/_app.scss'] = 'assets/scss/app.scss'
+			moveable['henris/stable/_tools.scss'] = 'assets/scss/tools.scss'
+			moveable['henris/stable/_pre.scss'] = 'assets/scss/tools/_pre.scss'
+		}
 		let nuxtDir;
 		return Object.assign(moveable, move('nuxt', nuxtDir));
 	},
 	post(
 		{ npmInstall, gitInit, chalk, isNewFolder, folderName }
 	) {
+		var fs = require('fs');
+		var deleteFolderRecursive = function(path) {
+			if( fs.existsSync(path) ) {
+				fs.readdirSync(path).forEach(function(file,index){
+				var curPath = path + "/" + file;
+				if(fs.lstatSync(curPath).isDirectory()) { // recurse
+					deleteFolderRecursive(curPath);
+				} else { // delete file
+					fs.unlinkSync(curPath);
+				}
+				});
+				fs.rmdirSync(path);
+			}
+		};
+		let henrisPath = process.cwd();
+
+		if(isNewFolder){
+			henrisPath = join(henrisPath, folderName)
+		}
+
+		henrisPath = join(henrisPath, 'henris')
+
+		deleteFolderRecursive(henrisPath)
 		gitInit();
 
 		npmInstall();
