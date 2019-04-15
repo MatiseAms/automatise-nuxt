@@ -61,6 +61,29 @@ module.exports = {
 	post(
 		{ npmInstall, gitInit, chalk, isNewFolder, folderName }
 	) {
+		var fs = require('fs');
+		var deleteFolderRecursive = function(path) {
+			if( fs.existsSync(path) ) {
+				fs.readdirSync(path).forEach(function(file,index){
+				var curPath = path + "/" + file;
+				if(fs.lstatSync(curPath).isDirectory()) { // recurse
+					deleteFolderRecursive(curPath);
+				} else { // delete file
+					fs.unlinkSync(curPath);
+				}
+				});
+				fs.rmdirSync(path);
+			}
+		};
+		let henrisPath = process.cwd();
+
+		if(isNewFolder){
+			henrisPath = join(henrisPath, folderName)
+		}
+
+		henrisPath = join(henrisPath, 'henris')
+
+		deleteFolderRecursive(henrisPath)
 		gitInit();
 
 		npmInstall();
