@@ -40,7 +40,7 @@
 	overflow: hidden;
 	border-radius: 3px;
 	animation: comeUp 0.75s ease-in-out forwards;
-	background-color: color(Henris);
+	background-color: color(White);
 	@keyframes comeUp {
 		0% {
 			box-shadow: 0 0 grid(0) 0 color(Black, 0.25), 0 -3px 0 0 color(Black, 0.15) inset;
