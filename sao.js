@@ -43,7 +43,6 @@ module.exports = {
 			'_eslintrc.js': '.eslintrc.js',
 			'_package.json': 'package.json',
 			'_babelrc': '.babelrc',
-			'_stylelint.json': 'stylelint.json',
 			'_prettierrc': '.prettierrc'
 		};
 		if (answers.henris === 'beta') {

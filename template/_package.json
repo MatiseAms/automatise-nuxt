@@ -42,5 +42,33 @@
 	"browserslist": [
 		"last 2 versions",
 		"not dead"
-	]
+	],
+	"stylelint": {
+		"rules": {
+			"at-rule-no-unknown": [
+				true,
+				{
+					"ignoreAtRules": [
+						"if",
+						"for",
+						"else",
+						"each",
+						"mixin",
+						"include",
+						"content"
+					]
+				}
+			],
+			"order/order": [
+				"custom-properties",
+				"dollar-variables",
+				"declarations",
+				"rules"
+			],
+			"indentation": "tab"
+		},
+		"extends": [
+			"stylelint-logical-order"
+		]
+	}
 }
