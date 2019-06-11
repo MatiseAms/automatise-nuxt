@@ -13,6 +13,9 @@
 		"lintfix": "eslint --ext .js,.vue --ignore-path .gitignore . --fix",
 		"precommit": "lint",
 		"generate": "nuxt generate",
+		"generate:develop": "cp ./config/develop.js ./config/latest.js && nuxt generate",
+		"generate:staging": "cp ./config/staging.js ./config/latest.js && nuxt generate",
+		"generate:production": "cp ./config/production.js ./config/latest.js && nuxt generate",
 		"stylelint": "stylelint '**/*.vue' '**/*.scss'",
 		"stylelint:fix": "stylelint '**/*.vue' '**/*.scss' --fix"
 	},
