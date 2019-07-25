@@ -7,8 +7,8 @@
 	"scripts": {
 		"dev": "sh scripts/dev.sh",
 		"devlocal": "sh scripts/devlocal.sh",
-		"staging": "sh scripts/staging.sh",
-		"production": "sh scripts/production.sh",
+		"netlify:staging": "sh scripts/staging.sh",
+		"netlify:production": "sh scripts/production.sh",
 		"lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
 		"lintfix": "eslint --ext .js,.vue --ignore-path .gitignore . --fix",
 		"precommit": "lint",

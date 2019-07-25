@@ -4,13 +4,4 @@ cp ./config/production.js ./config/latest.js
 # node env
 export NODE_ENV=production 
 
-nuxt build
-
-rm -rf dist
-mkdir dist
-cp -r .nuxt dist/.nuxt
-cp -r static dist/static
-cp package.json dist/package.json
-
-echo 'all that is left is running "npm i --production" in the dist folder'
-echo 'than running "./node_modules/.bin/nuxt start"'
+nuxt generate
