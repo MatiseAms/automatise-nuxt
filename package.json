@@ -1,28 +1,29 @@
 {
-	"name": "create-matise-nuxt",
-	"version": "0.0.15",
+	"name": "automatise-nuxt",
+	"version": "0.1.6",
 	"description": "Create Matise Nuxt.js App.",
 	"bin": "cli.js",
 	"files": [
 		"cli.js",
-		"sao.js",
+		"saofile.js",
 		"template/"
 	],
 	"repository": {
-		"url": "git+https://github.com/matiseams/create-matise-nuxt.git",
+		"url": "git+https://github.com/matiseams/automatise-nuxt.git",
 		"type": "git"
 	},
 	"scripts": {
-		"try": "rm -rf fissa && node cli.js fissa"
+		"try": "rm -rf fissa && node cli.js fissa",
+		"trypublish": "npm publish || true"
 	},
 	"dependencies": {
-		"minimist": "^1.2.0",
-		"sao": "^0.22.17",
-		"superb": "^3.0.0"
+		"sao": "^1.6.1",
+		"superb": "^4.0.0"
 	},
 	"devDependencies": {},
 	"authors": [
 		"Sil van Diepen <sil@matise.nl>",
+		"Cyd Stumpel <cyd@matise.nl>",
 		"Stephan Hoogland <stephan@matise.nl>"
 	],
 	"license": "MIT"

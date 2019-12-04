@@ -1,0 +1,14 @@
+# netlify.toml
+CI = 1
+NPM_FLAGS = "--no-optional"
+[build]
+  publish = "dist"
+  
+[context.production]
+  command = "npm run netlify:production"
+
+[context.deploy-preview]
+  command = "npm run netlify:staging"
+
+[context.branch-deploy]
+  command = "npm run netlify:staging"

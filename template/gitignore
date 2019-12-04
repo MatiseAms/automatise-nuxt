@@ -17,3 +17,4 @@ dist
 # Misc
 .DS_Store
 config/latest.js
+static/_headers

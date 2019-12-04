@@ -1,0 +1,14 @@
+on: push
+name: Run Linters
+jobs:
+  run_linters:
+    name: Run Linters
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
+    - run: npm install
+    - run: npm run lint
+    - run: npm run stylelint
