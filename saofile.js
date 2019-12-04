@@ -47,7 +47,9 @@ module.exports = {
 			packages: [
 				'nuxt',
 				'@nuxtjs/axios',
-				'@nuxtjs/google-analytics']
+				'@nuxtjs/google-analytics',
+				'@nuxtjs/style-resources'
+			]
 		})
 		await this.npmInstall({
 			packages: [

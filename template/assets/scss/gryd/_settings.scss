@@ -11,3 +11,9 @@ $grid-breakpoints: (
 	xlarge: 1600,
 	xxlarge: 1920
 );
+
+$color-default: (
+  'Dark': #000000,
+	'Light': #ffffff,
+	'Yellow': #ffcc00
+) !default;

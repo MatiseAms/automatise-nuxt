@@ -1,5 +1,5 @@
 <template>
-	<section class="simple-content column small-24 medium-12 mediumlarge-14 large-18 xlarge-half xxlarge-22">
+	<section class="simple-content column small-24 medium-12 mediumlarge-14 large-18 xlarge-half">
 		<h1>Automatise Nuxt! 🎩</h1>
 		<ul class="font-italic">
 			<li>
@@ -15,11 +15,8 @@
 </template>
 
 <style lang="scss">
-@import '~gryd';
 .simple-content {
 	margin: grid(2) auto;
-	@media #{$small-only} {
-		padding: 2rem;
-	}
+	padding: 2rem;
 }
 </style>

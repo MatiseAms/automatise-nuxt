@@ -1,6 +1,8 @@
 <template>
 	<header class="header">
-		<h2>{{ projectName }}</h2>
+		<h2 class="color--hotpink">
+			{{ projectName }}
+		</h2>
 		<h2>Heador</h2>
 	</header>
 </template>

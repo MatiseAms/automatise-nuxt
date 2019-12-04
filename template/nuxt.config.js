@@ -43,7 +43,8 @@ module.exports = {
 	modules: [
 		'nuxt-rfg-icon',
 		// '@nuxtjs/google-analytics',
-		'@nuxtjs/axios'
+		'@nuxtjs/axios',
+		'@nuxtjs/style-resources'
 	],
 
 	/*
@@ -65,6 +66,9 @@ module.exports = {
 		baseURL: config.api
 	},
 
+	styleResources: {
+		scss: ['./assets/scss/color/_index.scss', './assets/scss/gryd/index.scss']
+	},
 	/*
 	 ** Build configuration
 	 */
@@ -85,8 +89,6 @@ module.exports = {
 		 ** You can extend webpack config here
 		 */
 		extend(config, ctx) {
-			// Define toolset shortcut
-			config.resolve.alias['~gryd'] = 'assets/scss/gryd/index.scss';
 			// Run ESLint on save
 			if (ctx.isDev && ctx.isClient) {
 				config.module.rules.push({

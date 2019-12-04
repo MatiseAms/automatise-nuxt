@@ -22,7 +22,6 @@ $grid-parts: (
 
 .column {
 	@each $grid-name, $grid-value in $grid-breakpoints {
-		@debug $grid-name;
 		$query: 'only screen and (min-width: 0px)';
 		@if $grid-name != 'small' {
 			$query: map-get($media-queries, '#{$grid-name}-up');
