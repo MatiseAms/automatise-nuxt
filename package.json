@@ -1,6 +1,6 @@
 {
 	"name": "automatise-nuxt",
-	"version": "0.1.6",
+	"version": "1.0.0",
 	"description": "Create Matise Nuxt.js App.",
 	"bin": "cli.js",
 	"files": [
