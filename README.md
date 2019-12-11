@@ -5,7 +5,6 @@
 
 </details>
 
-SCSS functions based on Henri's (https://www.henris.style/)
 
 ## Usage
 
@@ -18,3 +17,4 @@ npx automatise-nuxt <my-project>
 ## Credits
 
 - Matise - [matise.nl](https://www.matise.nl)
+- SCSS functions based on Henri's (https://www.henris.style/)
