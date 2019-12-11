@@ -1,8 +1,11 @@
 # Create Automatise Nuxt App
+[![NPM version](https://img.shields.io/npm/v/automatise-nuxt.svg?style=flat)](https://npmjs.com/package/automatise-nuxt) [![NPM downloads](https://img.shields.io/npm/dm/automatise-nuxt.svg?style=flat)](https://npmjs.com/package/automatise-nuxt)
 
 > Create a Matise [Nuxt.js](https://github.com/nuxt/nuxt.js) project with Gryd
 
 </details>
+
+SCSS functions based on Henri's (https://www.henris.style/)
 
 ## Usage
 
