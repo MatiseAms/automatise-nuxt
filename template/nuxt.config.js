@@ -66,7 +66,7 @@ module.exports = {
 		baseURL: config.api
 	},
 	styleResources: {
-		scss: ['~/assets/scss/color/_index.scss', '@node_modules/matise-gryd/gryd-index.scss']
+		scss: ['~/assets/scss/color/_index.scss', '~/assets/scss/variables/_index.scss', '@node_modules/matise-gryd/gryd-index.scss']
 	},
 	css: [
 		'~/assets/scss/app.scss'
