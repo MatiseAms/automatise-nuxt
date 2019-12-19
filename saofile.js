@@ -54,6 +54,7 @@ module.exports = {
 		await this.npmInstall({
 			packages: [
 				'nuxt-rfg-icon',
+				'matise-gryd',
 				'babel-eslint',
 				'eslint',
 				'eslint-config-prettier',
@@ -62,10 +63,7 @@ module.exports = {
 				'eslint-plugin-vue',
 				'eslint-plugin-prettier',
 				'node-sass',
-				'sass-loader',
-				'stylelint',
-				'stylelint-logical-order',
-				'stylelint-order',
+				'sass-loader'
 			],
 			saveDev: true
 		})

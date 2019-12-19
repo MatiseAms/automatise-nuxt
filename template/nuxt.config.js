@@ -65,10 +65,12 @@ module.exports = {
 	axios: {
 		baseURL: config.api
 	},
-
 	styleResources: {
-		scss: ['./assets/scss/color/_index.scss', './assets/scss/gryd/index.scss']
+		scss: ['~/assets/scss/color/_index.scss', '@node_modules/matise-gryd/gryd-index.scss']
 	},
+	css: [
+		'~/assets/scss/app.scss'
+	],
 	/*
 	 ** Build configuration
 	 */
@@ -99,15 +101,5 @@ module.exports = {
 				});
 			}
 		}
-	},
-
-	/*
-	 ** Global CSS
-	 */
-	css: [
-		{
-			src: '~assets/scss/app.scss',
-			lang: 'scss'
-		}
-	]
+	}
 };
