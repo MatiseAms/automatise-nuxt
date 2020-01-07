@@ -13,7 +13,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Use Node.js 13.x
-      uses: matiseams/setup-node@v1
+      uses: MatiseAms/setup-node@master
       with:
         node-version: 13.x
     - name: npm publish

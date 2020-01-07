@@ -1,3 +1,8 @@
+#!/bin/bash
+
+# exit on errors
+set -e
+
 # copy dev config to the latest.js (which is used in nuxt.config.js)
 cp ./config/dev.js ./config/latest.js
 
@@ -18,5 +23,8 @@ done
 
 # run the nuxt project on the following host
 export HOST=0.0.0.0
+
+# check if the node version matches the one in the package.json
+check-node-version --package
 
 nuxt

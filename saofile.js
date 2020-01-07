@@ -34,8 +34,6 @@ module.exports = {
 				'gitignore': '.gitignore',
 				'_eslintrc.js': '.eslintrc.js',
 				'_package.json': 'package.json',
-				'_babelrc': '.babelrc',
-				'_prettierrc': '.prettierrc',
 				'github': '.github'
 			}
 		}
@@ -53,17 +51,18 @@ module.exports = {
 		})
 		await this.npmInstall({
 			packages: [
-				'nuxt-rfg-icon',
-				'matise-gryd',
+				'check-node-version',
 				'babel-eslint',
 				'eslint',
-				'eslint-config-prettier',
-				'eslint-friendly-formatter',
 				'eslint-loader',
+				'eslint-plugin-nuxt',
+				'eslint-plugin-only-warn',
 				'eslint-plugin-vue',
-				'eslint-plugin-prettier',
 				'node-sass',
-				'sass-loader'
+				'nuxt-rfg-icon',
+				'postcss',
+				'sass-loader',
+				'matise-gryd'
 			],
 			saveDev: true
 		})

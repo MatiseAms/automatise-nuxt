@@ -4,6 +4,9 @@
 	"description": "<%= description %>",
 	"author": "<%= author %>",
 	"private": true,
+	"engines": {
+		"node": "^13"
+	},
 	"scripts": {
 		"dev": "sh scripts/dev.sh",
 		"devlocal": "sh scripts/devlocal.sh",
